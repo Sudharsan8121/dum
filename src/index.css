@@ -2,19 +2,42 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Global Reset & Smooth Animation */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
+/* Body Styling */
 body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Custom scrollbar */
+/* Responsive Typography */
+html {
+  font-size: 100%; /* base: 16px */
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 93.75%; /* ~15px */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 87.5%; /* ~14px */
+  }
+}
+
+/* Scrollbar Styling (WebKit + Firefox) */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -32,20 +55,21 @@ body {
   background: #a8a8a8;
 }
 
-/* Smooth animations */
+/* Firefox Scrollbar */
 * {
-  transition: all 0.2s ease-in-out;
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f1f1f1;
 }
 
-/* Custom gradient backgrounds */
-.gradient-bg {
+/* Custom Gradient Backgrounds */
+.bg-gradient-primary {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.gradient-bg-2 {
+.bg-gradient-pink {
   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
-.gradient-bg-3 {
+.bg-gradient-cyan {
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }

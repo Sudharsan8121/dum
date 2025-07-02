@@ -516,7 +516,7 @@ function App() {
     return (
       <div className="h-screen bg-gray-50 flex flex-col">
         {/* Chat Header */}
-        <div className="bg-white border-b border-gray-200 px-6 py-4 shadow-sm">
+        <div className="bg-white border-b border-gray-200 px- py-5 shadow-sm">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-violet-500 rounded-full flex items-center justify-center shadow-lg">
@@ -555,7 +555,7 @@ function App() {
                 className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-xl font-semibold transition-all duration-200 hover:scale-105 flex items-center space-x-2 shadow-lg"
               >
                 <UserX className="w-4 h-4" />
-                <span>End Chat</span>
+                <span>End</span>
               </button>
             </div>
           </div>

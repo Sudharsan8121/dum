@@ -348,16 +348,18 @@ function App() {
           )}
 
           {/* Hero Section */}
-          <div className="max-w-6xl mx-auto px-6 py-16">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
             <div className="text-center mb-16">
-              <h2 className="text-7xl font-black text-white mb-6 leading-tight">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+
                 Meet Amazing
                 <span className="block bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
                   Strangers
                 </span>
                 Worldwide
               </h2>
-              <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base sm:text-lg text-white/80 mb-8 max-w-xl mx-auto leading-relaxed">
+
                 Break barriers, share stories, and create meaningful connections with fascinating people 
                 from every corner of our beautiful planet. Your next great conversation is just one click away.
               </p>
@@ -380,7 +382,7 @@ function App() {
             </div>
 
             {/* Features Grid */}
-            <div className="grid md:grid-cols-4 gap-6 mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
                 <Zap className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
                 <h3 className="text-lg font-bold text-white mb-2">Instant Connect</h3>
@@ -418,7 +420,7 @@ function App() {
                       placeholder="Choose your username"
                       value={username}
                       onChange={(e) => setUsername(e.target.value)}
-                      className="w-full px-6 py-4 bg-white/20 border border-white/30 rounded-2xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent text-lg font-medium"
+                      className="w-full px-4 py-3 text-sm sm:text-base bg-white/20 border border-white/30 rounded-2xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent font-medium"
                       maxLength={20}
                     />
                   </div>
@@ -430,7 +432,7 @@ function App() {
                       placeholder="Your location (optional)"
                       value={location}
                       onChange={(e) => setLocation(e.target.value)}
-                      className="w-full pl-12 pr-6 py-4 bg-white/20 border border-white/30 rounded-2xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                      className="w-full pl-10 pr-4 py-3 text-sm sm:text-base bg-white/20 border border-white/30 rounded-2xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                     />
                   </div>
                   
@@ -441,7 +443,7 @@ function App() {
                       placeholder="Your interests (music, sports, travel...)"
                       value={interests}
                       onChange={(e) => setInterests(e.target.value)}
-                      className="w-full pl-12 pr-6 py-4 bg-white/20 border border-white/30 rounded-2xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                      className="w-full pl-10 pr-4 py-3 text-sm sm:text-base bg-white/20 border border-white/30 rounded-2xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                     />
                   </div>
                   
